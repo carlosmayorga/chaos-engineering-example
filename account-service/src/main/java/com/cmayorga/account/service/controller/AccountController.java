@@ -1,5 +1,6 @@
 package com.cmayorga.account.service.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +48,7 @@ public class AccountController {
         savingAccount.setId(id);
         savingAccount.setName("Carlos Mayorga -desde contingencia");
         savingAccount.setBalance(800.00);
+        savingAccount.setCreateAt(new Date());
         account.setSavingAccount(savingAccount);
         
         return account;
